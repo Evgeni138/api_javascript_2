@@ -51,3 +51,18 @@ for (let index = 0; index < images.length; index++) {
     dot.id = 'dot' + index;
     points.append(dot);
 }
+
+const dots = document.querySelectorAll('.dot');
+dots.forEach(dot => {
+    dot.addEventListener('click', function (e) {
+        dots.forEach(dotEl => {
+            dotEl.classList.remove('active');
+        });
+        dot.classList.add('active');
+        const id = dot.id;
+        // number =id.charAt(id.length - 1);
+        currentNumber = parseInt(id.charAt(id.length - 1));
+        changePic(currentNumber);
+    });
+});
+
