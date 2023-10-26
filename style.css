@@ -1,0 +1,37 @@
+.pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 500px;
+    /* left: 25%;
+    position: relative; */
+}
+
+.btns {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: red;
+}
+
+.points {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
